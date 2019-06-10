@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shivavandana.imageid.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choose_from_gallery"
+        android:id="@+id/choose_from_gallery"
+        tools:context=".MainActivity"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="20dp"
+        android:maxWidth="20dp"
+        android:src="@drawable/gallery_image"
+        />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="take_a_photo"
+        android:id="@+id/take_a_photo"
+        tools:context=".MainActivity"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/choose_from_gallery"
+        android:layout_centerHorizontal="true" />
+     <!--<ImageView
+        android:src="@drawable/camera"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/take_a_photo"
+        android:id="@+id/text"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Long Press the text to copy to Clipboard!!" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/detected_text"
+        android:layout_below="@+id/text"
+        android:layout_margin="25dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:selectAllOnFocus="true"
+        android:scrollbars="vertical"/>
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy To ClipBoard"
+        android:id="@+id/copy_toClipboard"
+        tools:context=".MainActivity"
+        android:layout_below="@+id/detected_text"
+        android:layout_centerHorizontal="true" />-->
+</RelativeLayout>
