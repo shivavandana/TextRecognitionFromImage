@@ -1,2 +1,2 @@
 # TextRecognition
-The app is open to anyone who wants to extract the text from images(taken from gallery or by camera)
+This Android app reads the text from the image(taken from the gallery or a camera) using google APIs to extract the text. This Application also uses the third party application to crop the image in order to get the correct text.
